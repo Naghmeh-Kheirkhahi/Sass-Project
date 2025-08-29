@@ -1,0 +1,453 @@
+@import 'variables';
+@import 'functions';
+@import 'mixins';
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.main-container {
+    background-image: url('../images/Meeting.jpg');
+    height: 150vh;
+    @include backgorund-image;
+}
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $complete-width;
+    background-color: $white-color;
+    padding: 0.5rem 1rem;
+
+    img {
+        width: 50%;
+    }
+
+    ul {
+        list-style: none;
+        margin-top: 1rem;
+        @include centrilized-section-text;
+
+        li {
+            margin: 0 1rem;
+            font-weight: $max-font-weight;
+            font-size: $min-font-size;
+
+            a {
+                text-decoration: none;
+                color: $black-color;
+
+                // If you want the hover effect only for links inside navbar-container
+                &:hover {
+                    color: $dark-blue-color;
+                }
+            }
+        }
+    }
+}
+
+.search-box {
+    @include centrilized-section-text;
+
+    i {
+        color: $light-gray-color;
+        font-size: $min-font-size;
+        border-top-left-radius: $min-border-radius;
+        border-bottom-left-radius: $min-border-radius;
+        border: $main-border;
+        border-right: $none-border;
+        padding: 0.5rem 0.6rem;
+    }
+
+    input[type="text"] {
+        outline: none;
+        background: transparent;
+        font-size: $min-font-size;
+        width: $complete-width;
+        border-top-right-radius: $min-border-radius;
+        border-bottom-right-radius: $min-border-radius;
+        border: $main-border;
+        border-left: $none-border;
+        padding: 0.25rem 0.6rem 0.25rem 0;
+    }
+}
+
+.main-heading {
+    margin-top: $too-max-margin-top;
+    padding: 16rem 0 0 5rem;
+    width: 40%;
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: $light-black-color;
+        text-shadow: textShadow("light-medium");
+    }
+
+    p {
+        margin-top: $min-margin-top;
+        font-size: $middle-font-size;
+        color: $light-black-color;
+        font-weight: $min-font-weight;
+    }
+}
+
+.btn1 {
+    @include blue-button;
+}
+
+.btn2 {
+    @include white-button;
+    margin-left: $min-margin-top;
+}
+
+.btn1:hover,
+.btn2:hover {
+    opacity: 0.8;
+}
+
+
+/* About Us */
+.About-Us {
+    padding: $sections-padding;
+}
+
+.subheading {
+    @include subheading-text;
+}
+
+.heading {
+    @include heading-text;
+}
+
+.About-content {
+    @include centrilized-section-text-with-margin;
+
+    img {
+        width: 90%;
+        height: auto;
+        border-radius: $min-border-radius;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        font-weight: $max-font-weight;
+        color: $light-black-color;
+        margin-top: $max-margin-top;
+    }
+
+    p {
+        font-size: $min-font-size;
+        color: $light-black-color;
+        margin-top: $min-margin-top;
+        line-height: $line-height-text;
+    }
+
+    button {
+        @include blue-button;
+        margin-top: 1rem;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+
+/* Services */
+.Services {
+    text-align: center;
+    @include colored-section;
+
+    button {
+        @include blue-button;
+        margin-top: 3rem;
+    }
+}
+
+/* subheading and heading have been already defined */
+
+.Services-content {
+    @include centrilized-section-text-with-margin;
+}
+
+.service-box {
+    border: $main-border;
+    border-radius: $max-border-radius;
+    padding: 2rem;
+    margin: 0 1rem;
+
+    i {
+        color: $white-color;
+        font-size: $max-font-size;
+        margin-bottom: $min-margin-bottom;
+        padding: 1rem;
+        background-color: $dark-blue-color;
+        border: 1px solid rgb(6, 84, 240);
+        border-radius: $fifty-border-radius;
+    }
+
+    h3 {
+        font-size: $max-font-size;
+        font-weight: $max-font-weight;
+        color: $light-black-color;
+        margin-bottom: $min-margin-bottom;
+    }
+
+    p {
+        font-size: $min-font-size;
+        color: $light-gray-color;
+        line-height: $line-height-text;
+    }
+}
+
+
+/* Why Choose Us */
+.Why-Choose-Us {
+    @include colored-section;
+}
+
+/* subheading and heading have been already defined */
+
+.choose-box {
+    margin: $max-margin-top;
+}
+
+.Why-Choose-Us-content {
+    margin-top: $too-max-margin-top;
+
+    h3 {
+        font-size: $max-font-size;
+        font-weight: $max-font-weight;
+        color: $light-black-color;
+        margin-bottom: $min-margin-bottom;
+    }
+
+    span {
+        color: $blue-color;
+    }
+
+    p {
+        font-size: $min-font-size;
+        color: $light-gray-color;
+        line-height: $line-height-text;
+    }
+}
+
+
+/* Numbers */
+.Numbers {
+    padding: 5rem 10rem;
+}
+
+/* subheading and heading have been already defined */
+
+.Numbers-images {
+    @include centrilized-section-text;
+
+    img {
+        width: 30%;
+        height: auto;
+        border-radius: $fifty-border-radius;
+        box-shadow: textShadow("dark");
+
+        &:last-child {
+            margin-top: $max-margin-top;
+            margin-left: -13rem;
+        }
+    }
+}
+
+.Numbers-content {
+    margin-top: $too-min-margin-top;
+
+    h5 {
+        font-size: 1.8rem;
+        font-weight: $max-font-weight;
+        color: $dark-blue-color;
+    }
+
+    h6 {
+        font-size: 1.3rem;
+        font-weight: $min-font-weight;
+        color: $light-black-color;
+        margin-bottom: $max-margin-bottom;
+    }
+}
+
+
+/* Blog */
+.Blog {
+    padding: $sections-padding;
+}
+
+/* subheading and heading have been already defined */
+
+.Blog-content {
+    @include centrilized-text;
+    margin-top: 4rem;
+
+    img {
+        width: $complete-width;
+        height: auto;
+        border-radius: $max-border-radius;
+    }
+
+    button {
+        @include white-button;
+        border: 1px solid rgb(6, 84, 240);
+        margin: 2rem 0;
+
+        &:hover {
+            background-color: $light-white-color;
+        }
+    }
+}
+
+
+
+/* Gallery */
+.Gallery {
+    @include colored-section;
+}
+
+/* subheading and heading have been already defined */
+
+.Gallery-description {
+    font-size: $min-font-size;
+    color: $light-black-color;
+    text-align: center;
+    margin-top: $middle-margin-top;
+}
+
+.Gallery-content {
+    margin-top: 5rem;
+
+    img {
+        border-radius: $max-border-radius;
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: $complete-width;
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+
+/* Contact Us */
+.Contact-Us {
+    padding: $sections-padding;
+    background-image: linear-gradient(rgba(38, 54, 87, 0.8), rgba(38, 54, 87, 0.8)), url('../images/Contact-Us.jpg');
+    background-blend-mode: darken;
+    @include backgorund-image
+}
+
+/* subheading and heading have been already defined */
+
+.Contact-description {
+    font-size: $min-font-size;
+    color: $white-color;
+    text-align: center;
+    margin-top: $middle-margin-top;
+}
+
+.Contact-shadow {
+    text-shadow: textShadow("light");
+}
+
+.Contact-Us-content {
+    align-items: center;
+    margin: 5rem;
+}
+
+.Contact-info {
+    @include centrilized-section;
+    margin-bottom: $max-margin-bottom;
+
+    i {
+        font-size: $middle-font-size;
+        margin-right: $min-margin-top;
+        padding: 1rem;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: $white-color;
+        border-radius: $fifty-border-radius;
+    }
+
+    &-content {
+        padding-top: 1rem;
+    }
+
+    h5 {
+        font-size: $middle-font-size;
+        font-weight: $max-font-weight;
+        color: $middle-blue-color;
+        text-shadow: textShadow("medium");
+    }
+
+    p {
+        font-size: $middle-font-size;
+        color: $white-color;
+        margin-top: $too-min-margin-top;
+    }
+}
+
+
+.form-part {
+    margin-bottom: $middle-margin-bottom;
+
+    label {
+        font-weight: $max-font-weight;
+        color: $light-black-color;
+        font-size: $min-font-size;
+    }
+
+    input,
+    textarea {
+        width: $complete-width;
+        padding: 0.5rem;
+        border: $main-border;
+        border-radius: $min-border-radius;
+        font-size: $min-font-size;
+        color: $light-black-color;
+    }
+}
+
+form {
+  background-color: $opacity-white-color;
+  padding: 2rem;
+  border-radius: $max-border-radius;
+
+  button {
+    @include blue-button;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+
+/* Footer */
+footer {
+  padding: 3rem;
+
+  p {
+    text-align: center;
+    color: $dark-gary-color;
+    font-size: $middle-font-size;
+    font-weight: $min-font-weight;
+  }
+}
+
+
+
+/* The functions */
+

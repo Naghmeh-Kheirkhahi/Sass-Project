@@ -1,0 +1,455 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  overflow-x: hidden;
+}
+
+.main-container {
+  background-image: url("../images/Meeting.jpg");
+  height: 150vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+}
+.navbar-container img {
+  width: 50%;
+}
+.navbar-container ul {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-container ul li {
+  margin: 0 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.navbar-container ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.navbar-container ul li a:hover {
+  color: rgb(6, 84, 240);
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-box i {
+  color: rgb(100, 100, 100);
+  font-size: 1rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid #b0b0b0;
+  border-right: none;
+  padding: 0.5rem 0.6rem;
+}
+.search-box input[type=text] {
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #b0b0b0;
+  border-left: none;
+  padding: 0.25rem 0.6rem 0.25rem 0;
+}
+
+.main-heading {
+  margin-top: 3rem;
+  padding: 16rem 0 0 5rem;
+  width: 40%;
+}
+.main-heading h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: rgb(35, 35, 35);
+  text-shadow: 5px 5px 6px rgba(222, 222, 222, 0.5);
+}
+.main-heading p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: rgb(35, 35, 35);
+  font-weight: 600;
+}
+
+.btn1 {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: rgb(6, 84, 240);
+  color: rgb(255, 255, 255);
+}
+
+.btn2 {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+  color: rgb(6, 84, 240);
+  margin-left: 1rem;
+}
+
+.btn1:hover,
+.btn2:hover {
+  opacity: 0.8;
+}
+
+/* About Us */
+.About-Us {
+  padding: 5rem;
+}
+
+.subheading {
+  font-size: 1rem;
+  color: rgb(22, 94, 239);
+  font-weight: 600;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(35, 35, 35);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.About-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.About-content img {
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+}
+.About-content h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: rgb(35, 35, 35);
+  margin-top: 2rem;
+}
+.About-content p {
+  font-size: 1rem;
+  color: rgb(35, 35, 35);
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+.About-content button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: rgb(6, 84, 240);
+  color: rgb(255, 255, 255);
+  margin-top: 1rem;
+}
+.About-content button:hover {
+  opacity: 0.8;
+}
+
+/* Services */
+.Services {
+  text-align: center;
+  padding: 5rem;
+  background-color: rgb(230, 238, 255);
+}
+.Services button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: rgb(6, 84, 240);
+  color: rgb(255, 255, 255);
+  margin-top: 3rem;
+}
+
+/* subheading and heading have been already defined */
+.Services-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.service-box {
+  border: 1px solid #b0b0b0;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 0 1rem;
+}
+.service-box i {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: rgb(6, 84, 240);
+  border: 1px solid rgb(6, 84, 240);
+  border-radius: 50%;
+}
+.service-box h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(35, 35, 35);
+  margin-bottom: 1rem;
+}
+.service-box p {
+  font-size: 1rem;
+  color: rgb(100, 100, 100);
+  line-height: 1.5;
+}
+
+/* Why Choose Us */
+.Why-Choose-Us {
+  padding: 5rem;
+  background-color: rgb(230, 238, 255);
+}
+
+/* subheading and heading have been already defined */
+.choose-box {
+  margin: 2rem;
+}
+
+.Why-Choose-Us-content {
+  margin-top: 3rem;
+}
+.Why-Choose-Us-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(35, 35, 35);
+  margin-bottom: 1rem;
+}
+.Why-Choose-Us-content span {
+  color: rgb(22, 94, 239);
+}
+.Why-Choose-Us-content p {
+  font-size: 1rem;
+  color: rgb(100, 100, 100);
+  line-height: 1.5;
+}
+
+/* Numbers */
+.Numbers {
+  padding: 5rem 10rem;
+}
+
+/* subheading and heading have been already defined */
+.Numbers-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Numbers-images img {
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.Numbers-images img:last-child {
+  margin-top: 2rem;
+  margin-left: -13rem;
+}
+
+.Numbers-content {
+  margin-top: 0.5rem;
+}
+.Numbers-content h5 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: rgb(6, 84, 240);
+}
+.Numbers-content h6 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(35, 35, 35);
+  margin-bottom: 2rem;
+}
+
+/* Blog */
+.Blog {
+  padding: 5rem;
+}
+
+/* subheading and heading have been already defined */
+.Blog-content {
+  text-align: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.Blog-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.Blog-content button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+  color: rgb(6, 84, 240);
+  border: 1px solid rgb(6, 84, 240);
+  margin: 2rem 0;
+}
+.Blog-content button:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+/* Gallery */
+.Gallery {
+  padding: 5rem;
+  background-color: rgb(230, 238, 255);
+}
+
+/* subheading and heading have been already defined */
+.Gallery-description {
+  font-size: 1rem;
+  color: rgb(35, 35, 35);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.Gallery-content {
+  margin-top: 5rem;
+}
+.Gallery-content img {
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Contact Us */
+.Contact-Us {
+  padding: 5rem;
+  background-image: linear-gradient(rgba(38, 54, 87, 0.8), rgba(38, 54, 87, 0.8)), url("../images/Contact-Us.jpg");
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* subheading and heading have been already defined */
+.Contact-description {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.Contact-shadow {
+  text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.5);
+}
+
+.Contact-Us-content {
+  align-items: center;
+  margin: 5rem;
+}
+
+.Contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.Contact-info i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+.Contact-info-content {
+  padding-top: 1rem;
+}
+.Contact-info h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(65, 128, 255);
+  text-shadow: 5px 5px 5px rgb(25, 25, 25);
+}
+.Contact-info p {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  margin-top: 0.5rem;
+}
+
+.form-part {
+  margin-bottom: 1.5rem;
+}
+.form-part label {
+  font-weight: 700;
+  color: rgb(35, 35, 35);
+  font-size: 1rem;
+}
+.form-part input,
+.form-part textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #b0b0b0;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: rgb(35, 35, 35);
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+}
+form button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: rgb(6, 84, 240);
+  color: rgb(255, 255, 255);
+}
+form button:hover {
+  opacity: 0.8;
+}
+
+/* Footer */
+footer {
+  padding: 3rem;
+}
+footer p {
+  text-align: center;
+  color: rgb(70, 70, 70);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* The functions */
+
+/*# sourceMappingURL=styles.css.map */
