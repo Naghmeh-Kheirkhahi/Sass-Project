@@ -31,3 +31,9 @@
         @return none;
     }
 }
+
+
+// Function to calculate width fraction
+@function percentage-width($percentage, $total: 100) {
+  @return percentage($percentage / $total);
+}

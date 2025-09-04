@@ -9,8 +9,8 @@ body {
     padding: 0;
     font-family: 'Arial', sans-serif;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
-
 
 .main-container {
     background-image: url('../images/Meeting.jpg');
@@ -22,12 +22,12 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: $complete-width;
+    width: percentage-width(100);
     background-color: $white-color;
     padding: 0.5rem 1rem;
 
     img {
-        width: 50%;
+        width: percentage-width(50); 
     }
 
     ul {
@@ -70,7 +70,7 @@ body {
         outline: none;
         background: transparent;
         font-size: $min-font-size;
-        width: $complete-width;
+        width: percentage-width(100);
         border-top-right-radius: $min-border-radius;
         border-bottom-right-radius: $min-border-radius;
         border: $main-border;
@@ -82,7 +82,7 @@ body {
 .main-heading {
     margin-top: $too-max-margin-top;
     padding: 16rem 0 0 5rem;
-    width: 40%;
+    width: percentage-width(40);
 
     h1 {
         font-size: 3.5rem;
@@ -131,7 +131,7 @@ body {
     @include centrilized-section-text-with-margin;
 
     img {
-        width: 90%;
+        width: percentage-width(90);
         height: auto;
         border-radius: $min-border-radius;
     }
@@ -253,7 +253,7 @@ body {
     @include centrilized-section-text;
 
     img {
-        width: 30%;
+        width: percentage-width(30);
         height: auto;
         border-radius: $fifty-border-radius;
         box-shadow: textShadow("dark");
@@ -295,7 +295,7 @@ body {
     margin-top: 4rem;
 
     img {
-        width: $complete-width;
+        width: percentage-width(100);
         height: auto;
         border-radius: $max-border-radius;
     }
@@ -335,7 +335,7 @@ body {
         margin: 0;
         padding: 0;
         display: block;
-        width: $complete-width;
+        width: percentage-width(100);
         height: 250px;
         object-fit: cover;
     }
@@ -411,7 +411,7 @@ body {
 
     input,
     textarea {
-        width: $complete-width;
+        width: percentage-width(100);
         padding: 0.5rem;
         border: $main-border;
         border-radius: $min-border-radius;
@@ -421,33 +421,28 @@ body {
 }
 
 form {
-  background-color: $opacity-white-color;
-  padding: 2rem;
-  border-radius: $max-border-radius;
+    background-color: $opacity-white-color;
+    padding: 2rem;
+    border-radius: $max-border-radius;
 
-  button {
-    @include blue-button;
+    button {
+        @include blue-button;
 
-    &:hover {
-      opacity: 0.8;
+        &:hover {
+            opacity: 0.8;
+        }
     }
-  }
 }
 
 
 /* Footer */
 footer {
-  padding: 3rem;
+    padding: 3rem;
 
-  p {
-    text-align: center;
-    color: $dark-gary-color;
-    font-size: $middle-font-size;
-    font-weight: $min-font-weight;
-  }
+    p {
+        text-align: center;
+        color: $dark-gary-color;
+        font-size: $middle-font-size;
+        font-weight: $min-font-weight;
+    }
 }
-
-
-
-/* The functions */
-
