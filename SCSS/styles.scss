@@ -446,3 +446,72 @@ footer {
         font-weight: $min-font-weight;
     }
 }
+
+
+/* Bootstrap classes for dividing div s and Responsive Design */
+
+.my-row {
+    @include row(2rem);
+
+    > .mycol-1 {
+        @include col (8.33%);
+    }
+
+    > .mycol-2 {
+        @include col (16.66%);
+    }
+    
+    > .mycol-3 {
+        @include col (25%);
+    }
+
+    > .mycol-4 {
+        @include col (33.33%);
+    }
+
+    > .mycol-5 {
+        @include col (41.66%);
+    }
+
+    > .mycol-6 {
+        @include col (50%);
+    }
+
+    > .mycol-7 {
+        @include col (58.33%);
+    }
+
+    > .mycol-8 {
+        @include col (66.66%);
+    }
+
+    > .mycol-9 {
+        @include col (75%);
+    }
+
+    > .mycol-10 {
+        @include col (83.33%);
+    }
+
+    > .mycol-11 {
+        @include col (91.66%);
+    }
+
+    > .mycol-12 {
+        @include col (100%);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .my-row > .mycol-6,
+    .my-row > .mycol-3 {
+       @include col(100%);
+    }
+}
+
+
+
+
+
+

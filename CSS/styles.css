@@ -1,3 +1,17 @@
+:root {
+  --bg-red: #d72d2d;
+  --bg-green: #2dd02d;
+  --bg-blue: #2457d8;
+  --bg-orange: #e68211;
+  --bg-purple: #a912e5;
+  --bg-yellow: #ebbe0b;
+  --bg-pink: #e5118e;
+}
+
+:root {
+  --text-align-center: center;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -449,6 +463,76 @@ footer p {
   color: rgb(70, 70, 70);
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+/* Bootstrap classes for dividing div s and Responsive Design */
+.my-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+.my-row > .col {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+.my-row > .mycol-1 {
+  flex: 0 0 8.33%;
+  max-width: 8.33%;
+}
+.my-row > .mycol-2 {
+  flex: 0 0 16.66%;
+  max-width: 16.66%;
+}
+.my-row > .mycol-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.my-row > .mycol-4 {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+.my-row > .mycol-5 {
+  flex: 0 0 41.66%;
+  max-width: 41.66%;
+}
+.my-row > .mycol-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.my-row > .mycol-7 {
+  flex: 0 0 58.33%;
+  max-width: 58.33%;
+}
+.my-row > .mycol-8 {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+}
+.my-row > .mycol-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.my-row > .mycol-10 {
+  flex: 0 0 83.33%;
+  max-width: 83.33%;
+}
+.my-row > .mycol-11 {
+  flex: 0 0 91.66%;
+  max-width: 91.66%;
+}
+.my-row > .mycol-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .my-row > .mycol-6,
+  .my-row > .mycol-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

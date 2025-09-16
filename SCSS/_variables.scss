@@ -14,9 +14,36 @@
   $light-blue-color: rgb(230, 238, 255);
 
 
+
+  // Define SCSS variable for *****inline styles
+  $bg-red: #d72d2d;
+  $bg-green: #2dd02d;
+  $bg-blue: #2457d8;
+  $bg-orange: #e68211;
+  $bg-purple: #a912e5;
+  $bg-yellow: #ebbe0b;
+  $bg-pink: #e5118e;
+
+
+  // Assign them as CSS variables inside :root
+  :root {
+    --bg-red: #{$bg-red};
+    --bg-green: #{$bg-green};
+    --bg-blue: #{$bg-blue};
+    --bg-orange: #{$bg-orange};
+    --bg-purple: #{$bg-purple};
+    --bg-yellow: #{$bg-yellow};
+    --bg-pink: #{$bg-pink};
+  }
+
+
+
   $complete-width: 100%;
 
   $text-align-center: center;
+  :root {
+    --text-align-center: #{$text-align-center};
+  }
 
   $too-min-margin-top: 0.5rem;
   $min-margin-top: 1rem;
